@@ -12,4 +12,8 @@ Execute the below commands to download the GIT repo in a folder "insureme"
 Go to the new folder downloaded
 >> cd insureme
 
->> 
+Make a new virtual environment
+
+python3 -m venv venv
+
+pip install django djangorestframework
