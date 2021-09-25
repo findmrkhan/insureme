@@ -1,0 +1,52 @@
+- model: insure_app.CurrencyMaster
+  pk: 1
+  fields:
+    currency: AED
+    currency_name: UAE Dirham
+- model: insure_app.CurrencyMaster
+  pk: 2
+  fields:
+    currency: USD
+    currency_name: US Dollar
+
+- model: insure_app.PolicyStatusMaster
+  pk: 1
+  fields:
+    policy_status: QUOTED
+- model: insure_app.PolicyStatusMaster
+  pk: 2
+  fields:
+    policy_status: BOUNDED
+- model: insure_app.PolicyStatusMaster
+  pk: 3
+  fields:
+    policy_status: EXPIRED
+
+- model: insure_app.QuoteStatusMaster
+  pk: 1
+  fields:
+    quote_status: QUOTED
+- model: insure_app.QuoteStatusMaster
+  pk: 2
+  fields:
+    quote_status: ACCEPTED
+- model: insure_app.QuoteStatusMaster
+  pk: 3
+  fields:
+    quote_status: EXPIRED
+
+- model: insure_app.PolicyMaster
+  pk: 1
+  fields:
+    policytype: 3rd-party-vehicle-insurance
+    base_premium: 1000
+    currency: 1
+    agefactor: 3
+    terms_and_conditions: BLAH BLAH
+  pk: 2
+  fields:
+    policytype: 1st-party-vehicle-insurance
+    base_premium: 2000
+    currency: 1
+    agefactor: 2
+    terms_and_conditions: BLAH BLAH
