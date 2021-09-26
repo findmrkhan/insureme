@@ -89,9 +89,28 @@ Check the Quote model in the Admin panel again. The status of the Quote should b
 
 For listing policies, GET the endpoint (http://localhost:8000/api/v1/policies/) 
 
+### List the policy details
+
+For listing policies, GET the endpoint (http://localhost:8000/api/v1/policies/1/) 
+
 ### List the policies history
 
 For listing policies history, GET the endpoint (http://localhost:8000/api/v1/policies/1/history/)
 
+### TO DO "Pay Quote" endpoint
 
+
+### Proposed authentication 
+
+**OAuth + JWT** should be used. This helps achieving better security in a microservice environment. JWT are value token and hence need to maintain a datbase of tokens or cache is not needed.
+
+### NOTES
+
+The customers created through **"create_customer"** endpoint the will not be able to login to the Admin panel since a custom User model is used.
+
+The **Quotes and Policies** have a lot of overlap and hence they have been chosen for **One-to-One** relationship. If more details are available about them then it can be decided to have a **One-to-Many** or **Many-to-Many** relation
+
+
+### Further Actions
+Dockerize the project. Add SSL etc.
 
