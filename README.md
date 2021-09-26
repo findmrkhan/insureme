@@ -5,6 +5,8 @@ Please ensure that you have Python 3.5+  version, PIP and GIT installed on your 
 Execute the below commands to download the GIT repo in a folder "insureme"
 
 >> mkdir insureme 
+
+
 >> cd insureme
 
 >> git clone -b master https://github.com/findmrkhan/insureme.git
@@ -20,6 +22,8 @@ Make a new virtual environment
 
 Set up the database of Django project
 >> python3 manage.py makemigrations
+
+
 >> python3 manage.py migrate
 
 Do master data set up for models
